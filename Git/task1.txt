@@ -6,5 +6,3 @@ git add ./git/task1.txt
 git commit -m "firstCommit"
 
 //making changes
-This line is written by master branch
-This line is written by modifyTask1 branch
