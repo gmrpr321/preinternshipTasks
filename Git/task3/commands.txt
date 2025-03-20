@@ -1,0 +1,11 @@
+//make an initial commit
+git restore Git/task3/file1.txt
+
+git restore - brings the file back to its original state from the recent commit pulled by working repo
+
+git reset : Moves the pointer one level behind 
+git reset --soft HEAD~1 : keeps files staged
+git reset --mixed HEAD~1 : files unstaged, but changes arent reverted from local repo
+git reset --hard HEAD~1 : files unstaged and local repo reset
+
+git revert : creates a new commit that is the negation of previous commit
