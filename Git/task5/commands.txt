@@ -1,0 +1,3 @@
+git rebase -i HEAD~4
+
+squashes all minor commits into a major one
