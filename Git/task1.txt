@@ -5,6 +5,12 @@ Git init
 git add ./git/task1.txt
 git commit -m "firstCommit"
 
+git checkout -b modifyTask1 
+git add --all
+git commit -m "modifyTask1 changes"
+git checkout master
+git merge modifyTask1
+
 //making changes
 This line is written by master branch 
 This line is written by modifyTask1 branch
