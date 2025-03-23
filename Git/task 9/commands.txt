@@ -2,8 +2,4 @@
 // open a PR and review code
 //merge feature branch into main branch  (This is some new modification for merge conflicts)
 SOme more conflicts!!!
-<<<<<<< HEAD
 and even more!!!! this it for conflicts via master
-=======
-and even more!!!!
->>>>>>> 910c20e4f53874733b8fcc182bb1cd718674ee5d
