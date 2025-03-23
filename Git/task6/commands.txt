@@ -1,0 +1,10 @@
+//Stashing helps to save uncommitted work temporrarily
+
+ git stash : creates a stash. this includes staged files . untracked files and ignored files arent stashed by default
+ git stash -a : stashes all
+ git stash -u : includes ignored but not untracked
+
+ git stash apply : applies stash@{0}
+ git stash list : shows the list of stashes
+ git stash apply stash@{n} : applies nth stash
+ 
