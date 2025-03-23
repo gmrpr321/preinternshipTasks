@@ -1,0 +1,2 @@
+//git push --force : force push
+git reflog : locate and recover lost commits
