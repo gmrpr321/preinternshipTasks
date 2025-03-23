@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 This sentence is present before applying any stash
 THis sentence too....
 But not this
+=======
+This sentence is present before applying any stash
+>>>>>>> 6070268 (6th task before stash applied)
