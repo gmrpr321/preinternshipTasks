@@ -1,0 +1,5 @@
+//Pushing code to Github, create a feature branch,make commits and push it to remote
+// open a PR and review code
+//merge feature branch into main branch  (This is some new modification for merge conflicts)
+SOme more conflicts!!!
+and even more!!!! this it for conflicts via master
