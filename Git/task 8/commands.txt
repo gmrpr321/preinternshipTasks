@@ -1,0 +1,10 @@
+git hooks can be used for automated checks. basically running a bash script before commits and pushes to ensure correctness
+
+create a hook in .git/hooks/
+: in linux
+touch pre-commit 
+chmod +x .git/hooks/pre-push
+
+: in windows
+New-Item pre-commit 
+Add-Content <file-name> '//code'
