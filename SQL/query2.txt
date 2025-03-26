@@ -1,0 +1,10 @@
+select * from employees
+where department = 'sales';
+
+select * from employees
+where salary > 50000
+order by last_name;
+
+select * from employees
+where department = 'sales' and salary > 45000
+order by first_name;

@@ -1,0 +1,12 @@
+select department, count(*) as num_employees
+from employees
+group by department;
+
+select department, avg(salary) as average_salary
+from employees
+group by department;
+
+select department, sum(salary) as total_salary
+from employees
+group by department
+having sum(salary) > 100000;

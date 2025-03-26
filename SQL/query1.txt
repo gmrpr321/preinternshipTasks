@@ -1,0 +1,16 @@
+create table employees (
+    employee_id int primary key,
+    first_name varchar(50),
+    last_name varchar(50),
+    department varchar(50),
+    salary decimal(10, 2)
+);
+
+insert into employees (employee_id, first_name, last_name, department, salary)
+values
+(1, 'john', 'doe', 'sales', 50000),
+(2, 'jane', 'smith', 'marketing', 55000),
+(3, 'emily', 'johnson', 'sales', 45000),
+(4, 'michael', 'brown', 'hr', 60000);
+
+select * from employees;

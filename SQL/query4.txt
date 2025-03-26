@@ -1,0 +1,29 @@
+create table customers (
+    customer_id int primary key,
+    first_name varchar(50),
+    last_name varchar(50)
+);
+
+create table orders (
+    order_id int primary key,
+    customer_id int,
+    order_date date,
+    amount decimal(10, 2),
+    foreign key (customer_id) references customers(customer_id)
+);
+
+insert into customers (customer_id, first_name, last_name)
+values
+(1, 'alice', 'white'),
+(2, 'bob', 'green');
+
+insert into orders (order_id, customer_id, order_date, amount)
+values
+(1, 1, '2025-03-01', 150.00),
+(2, 2, '2025-03-02', 250.00);
+
+select * from customers
+inner join orders on customers.customer_id = orders.customer_id;
+
+select * from customers
+left join orders on customers.customer_id = orders.customer_id;
