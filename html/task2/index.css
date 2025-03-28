@@ -41,18 +41,18 @@ z-index :1;
     /* background-color: rgb(73, 9, 9); */
     /* width:fit-content; */
     z-index: 10;
-    position: relative;
+    position: absolute;
     padding: 10px;
-    top:-420px;
+    top:80px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     color: rgb(255, 255, 255); 
 }
 .class{
     z-index: 10;
-    position: relative;
+    position: absolute;
     padding: 10px;
-    top:-440px;
+    top:100px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     color: rgb(255, 255, 255); 
@@ -94,7 +94,30 @@ z-index :1;
 .attrRow:first-child{
     border-top-width: 0px;
 }
-.cardBackground:hover{
-        transform: translateY(-20px); 
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+@keyframes moveUpCard {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+@keyframes moveUpName {
+    0% {
+        transform: translateY(-60px);
+    }
+    100% {
+        transform: translateY(-60px);
+    }
+}
+
+.cardBackground:hover {
+    .class{
+        animation: moveUpName 0.5s  forwards;
+    }
+    .name {
+    animation: moveUpName 0.5s  forwards;
+}
+    animation: moveUpCard  0.5s ease-in  forwards;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  
 }
