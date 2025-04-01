@@ -1,0 +1,104 @@
+*{
+     list-style: none;
+     margin: 0rem;
+     padding:0rem;
+}
+.container{
+    background-color: rgb(255, 255, 255);
+    width:70rem;
+    height:30rem;
+    margin:auto;
+    margin-top: 2rem;
+}
+.dropdownContainer{
+    margin : 3rem;
+    text-align: center;
+}
+.title{
+    background-color: rgb(255, 255, 255);
+    font-size: larger;
+    margin-left: 3rem;
+
+}
+.locationLevel{
+    background-color: blue;
+    width:10rem;
+}
+.locationLevel > p{
+    background-color: bisque;
+    margin : auto;
+    padding:1rem;
+}
+.countryLevel > li, .stateLevel > li{
+    background-color: yellowgreen;
+    border: 2px white solid;
+    padding: 1rem;
+}
+/* .stateLevel{
+    display: none;
+} */
+ .stateLevel{
+    height: 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in ;
+ }
+.countryLevel > li {
+    background-color: gray;
+    display: block;
+}
+#india:hover{
+        cursor: pointer;
+        background-color: rebeccapurple;   
+    }
+#india:hover #indiaStates{
+    display: flex !important;
+    flex-direction: column;
+    position :relative;
+    left:9rem;
+    height: .5rem;
+    opacity: 1;
+    visibility: visible;
+}
+#china:hover{
+    cursor: pointer;
+    background-color: rebeccapurple;   
+}
+#china:hover #chinaStates{
+display: flex !important;
+flex-direction: column;
+position :relative;
+left:9rem;
+height: .5rem;
+opacity: 1;
+visibility: visible;
+}
+#japan:hover{
+    cursor: pointer;
+    background-color: rebeccapurple;   
+}
+#japan:hover #japanStates{
+display: flex !important;
+flex-direction: column;
+position :relative;
+left:9rem;
+bottom:5rem;
+height: .5rem;
+opacity: 1;
+    visibility: visible;
+}
+#england:hover{
+    cursor: pointer;
+    background-color: rebeccapurple;   
+}
+#england:hover #englandStates{
+    height: 20rem;
+display: flex !important;
+flex-direction: column;
+position :relative;
+left:9rem;
+bottom:8rem;
+height: .5rem;
+opacity: 1;
+    visibility: visible;
+}
