@@ -1,0 +1,12 @@
+select 
+    employee_id, 
+    department_id, 
+    salary, 
+    rank() over (partition by department_id order by salary desc) as salary_rank
+from employees;
+select 
+    employee_id, 
+    salary, 
+    lead(salary, 1) over (order by salary desc) as next_salary, 
+    lag(salary, 1) over (order by salary desc) as previous_salary
+from employees;

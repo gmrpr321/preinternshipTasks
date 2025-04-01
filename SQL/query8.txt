@@ -1,0 +1,6 @@
+with recent_orders as (
+    select order_id, customer_id, order_date 
+    from orders 
+    where order_date >= dateadd(day, -30, getdate())
+)
+select * from recent_orders;

@@ -1,0 +1,9 @@
+create procedure get_total_sales 
+    @start_date date, 
+    @end_date date
+as
+begin
+    select sum(total_amount) as total_sales
+    from orders
+    where order_date between @start_date and @end_date;
+end;

@@ -1,0 +1,12 @@
+select 
+    order_id, 
+    order_date, 
+    datediff(day, order_date, getdate()) as days_since_order
+from orders;
+select * 
+from orders 
+where order_date >= dateadd(day, -30, getdate());
+select 
+    order_id, 
+    convert(varchar, order_date, 103) as formatted_date 
+from orders;
