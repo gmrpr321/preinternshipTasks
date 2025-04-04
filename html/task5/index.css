@@ -1,0 +1,46 @@
+body{
+    text-align: center;
+}
+#modalToggle{
+    display: none;
+}
+.openModal{
+    display: block;
+    padding:10px;
+    background-color: rgb(238, 238, 238);
+    margin-top: 20px;
+    cursor: pointer;
+}
+.modalBg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.modalBody{
+    padding:30px;
+    background-color: rgb(76, 166, 166);
+}
+.closeModal{
+    position:relative;
+    /* display: block; */
+    padding:5px;
+    background-color: beige;
+    cursor: pointer;
+
+}
+#modalToggle:checked + .openModal + .modalBg  { 
+    opacity: 1;
+    visibility: visible;
+}
