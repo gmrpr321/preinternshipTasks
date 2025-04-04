@@ -1,0 +1,57 @@
+input[type="radio"]{
+    display: none;
+}
+body{
+    margin: 0px !important;
+}
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+    margin: 0;
+  }
+.tabBg{
+    display: flex;
+    justify-content: space-around;
+    background-color: blanchedalmond;
+    position:sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.tabBg > label{
+    display: block;
+    background-color: beige;
+    width: 30%;
+    text-align: center;
+    padding: 5px;
+    margin:5px;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+.pageBg{
+    position: relative;
+}
+.pageContent{
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    opacity: 0;
+    background-color: aquamarine;
+    visibility: hidden;
+    background-color: rgb(50, 159, 125);
+    padding: 30px;
+    margin-left: 0px;
+    height: 100vh;
+    z-index: 2;
+    pointer-events: none;
+   position: absolute;
+}
+#homeBtn:checked ~ .pageBg #homePage,
+#productsBtn:checked ~ .pageBg #productsPage,
+#contactBtn:checked ~ .pageBg #contactPage {
+opacity: 1;
+visibility: visible;
+z-index: 10;
+}
+.pageBody > h2{
+    text-align: center;
+}
