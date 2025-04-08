@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  color: #333;
+}
+
+.stickyHeader {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 100;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.headerTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1e3a8a;
+  text-align: center;
+}
+
+.navLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #1e3a8a;
+  font-weight: 500;
+}
+
+.mainLayout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.factGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  width: 90vw;
+}
+
+.factCard {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.factImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.factTag {
+ 
+  top: 1rem;
+  left: 1rem;
+  background-color: #f59e0b;
+  color: #ffffff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  z-index: 2;
+  width: 90%;
+  text-align: center;
+  margin:auto
+}
+
+.factText {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.footer {
+  background-color: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .mainLayout {
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .factGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .factTag{
+    width:95%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .factGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .factTag{
+   
+  }
+}
