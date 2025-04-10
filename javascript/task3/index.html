@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Gallery Lightbox</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1 class="title">Image Gallery</h1>
+  <div class="gallery">
+    <img src="https://imgs.search.brave.com/KPQFDng4I2wWcGwQt1UjUiUYlu3DPAzxCBgWo_Y5Nq0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vcGljanVt/Ym8uY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy9iZWF1dGlmdWwt/ZmFsbC1uYXR1cmUt/c2NlbmVyeS1mcmVl/LWltYWdlLmpwZWc_/dz02MDAmcXVhbGl0/eT04MA" alt="Nature" class="thumbnail" />
+    <img src="https://imgs.search.brave.com/SkQxaMTkPmSdj8dqCRaFCsIGeYrUXGoUfCxN0ha6z9c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxNi8x/Mi8xNy8xNC8zMy93/YXZlLTE5MTM1NTlf/NjQwLmpwZw" alt="Ocean" class="thumbnail" />
+    <img src="https://imgs.search.brave.com/6FSukdxCN95brfBCBH1oC8FNyP8eL0SHMIerWUWTL30/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxNS8x/Mi8wMS8yMC8yOC9m/b3Jlc3QtMTA3Mjgy/OF82NDAuanBn" alt="Forest" class="thumbnail" />
+    <img src="https://imgs.search.brave.com/XEB9D-9je0gHs_tp1erEaY01LiAtb9s7WjwGsgGOqXI/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/ZGVhbm1jbGVvZHBo/b3RvZ3JhcGh5LmNv/bS9pbWFnZXMvOTYw/L1NwcmF5LVZhbGxl/eS0xNjAwcHgtRE1Q/LVdlYnNpdGUuanBn" alt="Mountains" class="thumbnail" />
+  </div>
+
+  <div class="lightbox hidden" id="lightbox">
+    <div class="overlay"></div>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="Large Preview" />
+      <button class="close" id="closeBtn">&times;</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
